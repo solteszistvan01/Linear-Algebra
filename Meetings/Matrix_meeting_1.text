@@ -33,7 +33,7 @@ Problémák:
     
 2)Template osztály implementációja, melyben a két változó paraméter a Mátrix dimenzióira vonatkozik.
 
-1.1.1) a) Lehet-e példányosítani pusztán felsorolással, ezzel egyértelművé téve a Template paramétereket?
+1.1.2) a) Lehet-e példányosítani pusztán felsorolással, ezzel egyértelművé téve a Template paramétereket?
 
 
 Nevek
