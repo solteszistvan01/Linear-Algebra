@@ -1,0 +1,60 @@
+Követelmények, melyek törlésre kerültek:
+
+1.1) Példányosítható dimenziók megadásával template paraméterek helyén, majd egy függvény megadásával,
+mely előállítja az i.edik sor j. elemét bármely lehetséges i,j elemére a természetes számoknak.
+  1.1.1) Felsorolás során nincs szükség a template paraméterek beállítására.
+1.2) Példányosítható az elemek felsorolásával soronként.
+1.3) Példányosítható az elemek megadásával oszloponként.
+
+Törlések oka:
+
+"Constants such as 3,7,120 contained in the set of natural numbers can’t be substituted into template parameters.
+
+Only classes can be substituted into template parameters." - István Soltész
+
+Kivitelezhető követelmények:
+
+1) Matrix osztály
+  1.4) Ki lehessen választani egy tetszőleges oszlopot.
+  // Marix M; M.column(i);  //1 <= i <= n. Nem tudjuk, hogy milyen Mátrixról van szó.
+  1.5) Lehessen Mátrixoat összeadni, kivonni, megszorozni, legyen világos, hogy a szorzás nem kommutatív.
+  1.6) Sorokat is lehessen kiválasztani.
+  1.7) Egy R^(nxm)-beli A mátrix és egy R^(kxl)-beli B mátrix esetében lehessen A-hoz hozzácsatolni jobbról B-t,
+  ha n=k, így kapva egy A ¤ B R^(nx(m+l))-beli elemet.
+  Tehát ha R^(nxm)-beli A mátrix és R^(nxl)-beli B mátrix, akkor A ¤ B R^(nx(m+l))-beli mátrix.
+  A megvalósítás operátorral történjen.
+  1.8) Lehessen tetszőleges K^(nxm)-es mátrixnak előállítani a redukált lépcsős alakját.
+  1.9) Lehessen eldönteni, hogy egy tetszőleges K^(nxm)-es mátrixnak megfelelő ER egyenletrendszerére vonatkozóan:
+    1.9.1) konzisztens-e ER?
+    1.9.2) x eleme e ER megoldáshalmazának?
+
+Problémák:
+
+1)Ha adott két mátrix, melyek különböző dimenziókkal bírnak, akkor az összeadásuk értelmetlen.
+  Jó lenne, ha egy osztály bármely két elemét össze lehetne adni.
+    K^(nxm) |- K^(5xm) |- K^(5x4) |- R^(5x4). R^(5x4) elemeit mind össze lehet adni egymással.
+    n,m,K itt változók N, N, Testek értelmezési tartományokkal.
+
+Javasolt megoldások:
+
+1) "Összeadás során ha a dimenziók nem felelnek meg, akkor elegendő hibát dobni." - István Soltész
+2) "Egy Mátrix példányosítása során fel kell tüntetni a dimenziókat is."
+
+Meeting 2
+
+Követelmények cseréje:
+
+1.1) Példányosítható dimenziók megadásával az első két paraméter helyén, majd egy függvény megadásával,
+mely előállítja az i.edik sor j. elemét bármely lehetséges i,j elemére a természetes számoknak.
+1.2) Példányosítható az elemek felsorolásával soronként.
+1.3) Példányosítható az elemek megadásával oszloponként.
+2) A követelmény nem kivitelezhető, hisz értelmetlen, így elvetésre kerül.
+1.1.2) A kérdés értelmetlen, így nem lehet rá választ adni.
+
+Új követelmények:
+
+Függvény, mely biztosítja egy adott AB alakú mátrix diádokra bontását a legkisebb elemszámmal.
+Függvény, mely egyenletrendszer alakjában kiírja egy adott [A | b] alakú mátrixot, ahol A egy egyenletrendszernek az együtthatóit, b pedig konstansait
+tartalmazza.
+Függvény, mely egy adott Mátrixot lépcsős alakra hoz.
+Függvény, mely egy lépcsős alakú Mátrixot redukált lépcsős alakúra hoz. Amennyiben a bemenet nem lépcsős alakú, úgy hibával tér vissza.
