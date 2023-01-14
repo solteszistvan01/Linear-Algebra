@@ -4,9 +4,9 @@
   1.2) Példányosítható az elemek felsorolásával soronként.
   1.3) Példányosítható az elemek megadásával oszloponként.
   1.4) Ki lehessen választani egy tetszőleges oszlopot.
+  1.5) Sorokat is lehessen kiválasztani.
   // Marix M; M.column(i);  //1 <= i <= n. Nem tudjuk, hogy milyen Mátrixról van szó.
-  1.5) Lehessen Mátrixoat összeadni, kivonni, megszorozni, legyen világos, hogy a szorzás nem kommutatív.
-  1.6) Sorokat is lehessen kiválasztani.
+  1.6) Lehessen Mátrixoat összeadni, kivonni, megszorozni, legyen világos, hogy a szorzás nem kommutatív.
   1.7) Egy R^(nxm)-beli A mátrix és egy R^(kxl)-beli B mátrix esetében lehessen A-hoz hozzácsatolni jobbról B-t,
   ha n=k, így kapva egy A ¤ B R^(nx(m+l))-beli elemet.
   Tehát ha R^(nxm)-beli A mátrix és R^(nxl)-beli B mátrix, akkor A ¤ B R^(nx(m+l))-beli mátrix.
@@ -20,7 +20,7 @@
         Output: AB alakú mátrix-ot összegzéssel előállító diádok listája a legkevesebb elemszámmal
         
   2.2)  Input : [A | b] alakú mátrix, ahol A egy ER egyenletrendszer együtthatóit tartalmazza, b pedig ER konstansait
-        Output: [A | b]-nek megfelelő kiítása a konzolra
+        Output: [A | b]-nek megfelelő kiírása a konzolra
         
   2.3)  Input : A Matrix.
         Output: L Matrix, ahol L A-nak egy lépcsős alakja.
