@@ -1,0 +1,29 @@
+1) Matrix osztály
+  1.1) Példányosítható dimenziók megadásával az első két paraméter helyén, majd egy függvény megadásával,
+  mely előállítja az i.edik sor j. elemét bármely lehetséges i,j elemére a természetes számoknak.
+  1.2) Példányosítható az elemek felsorolásával soronként.
+  1.3) Példányosítható az elemek megadásával oszloponként.
+  1.4) Ki lehessen választani egy tetszőleges oszlopot.
+  // Marix M; M.column(i);  //1 <= i <= n. Nem tudjuk, hogy milyen Mátrixról van szó.
+  1.5) Lehessen Mátrixoat összeadni, kivonni, megszorozni, legyen világos, hogy a szorzás nem kommutatív.
+  1.6) Sorokat is lehessen kiválasztani.
+  1.7) Egy R^(nxm)-beli A mátrix és egy R^(kxl)-beli B mátrix esetében lehessen A-hoz hozzácsatolni jobbról B-t,
+  ha n=k, így kapva egy A ¤ B R^(nx(m+l))-beli elemet.
+  Tehát ha R^(nxm)-beli A mátrix és R^(nxl)-beli B mátrix, akkor A ¤ B R^(nx(m+l))-beli mátrix.
+  A megvalósítás operátorral történjen.
+  1.8) Lehessen tetszőleges K^(nxm)-es mátrixnak előállítani a redukált lépcsős alakját.
+  1.9) Lehessen eldönteni, hogy egy tetszőleges K^(nxm)-es mátrixnak megfelelő ER egyenletrendszerére vonatkozóan:
+    1.9.1) konzisztens-e ER?
+    1.9.2) x eleme e ER megoldáshalmazának?
+2) Függvények
+  2.1)  Input : AB alakú mátrix. 
+        Output: AB alakú mátrix-ot összegzéssel előállító diádok listája a legkevesebb elemszámmal
+        
+  2.2)  Input : [A | b] alakú mátrix, ahol A egy ER egyenletrendszer együtthatóit tartalmazza, b pedig ER konstansait
+        Output: [A | b]-nek megfelelő kiítása a konzolra
+        
+  2.3)  Input : A Matrix.
+        Output: L Matrix, ahol L A-nak egy lépcsős alakja.
+        
+  2.4)  Input : A Matrix.
+        Output: A Matrix lépcsős alakja. Hiba, ha A nem hozható lépcsős alakúra.
